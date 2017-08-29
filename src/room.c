@@ -6,7 +6,7 @@
 /*   By: lde-moul <lde-moul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/03 17:51:27 by lde-moul          #+#    #+#             */
-/*   Updated: 2017/08/28 19:05:56 by lde-moul         ###   ########.fr       */
+/*   Updated: 2017/08/29 18:42:19 by lde-moul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ static int	get_room(t_anthill *anthill, char *line)
 	if (!room->name)
 		return (0);
 	ft_strncpy(room->name, line, i);
-	i++;
+	room->name[i++] = '\0';
 	room->x = ft_atoi(&line[i]);
 	while (line[i] != ' ')
 		i++;
