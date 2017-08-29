@@ -6,7 +6,7 @@
 #    By: lde-moul <lde-moul@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/03/16 14:29:01 by lde-moul          #+#    #+#              #
-#    Updated: 2017/08/28 19:07:35 by lde-moul         ###   ########.fr        #
+#    Updated: 2017/08/29 15:13:05 by lde-moul         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,7 +58,7 @@ $(OBJDIR)/%.o: $(SRCDIR)/%.c
 	@$(CC) $(CFLAGS) -o $@ -c $< -I$(INC_LIBFT)
 
 $(OBJDIR):
-	/bin/mkdir $(OBJDIR)
+	@/bin/mkdir $(OBJDIR)
 
 $(NAME_LIBFT):
 	@make -C $(DIR_LIBFT)
