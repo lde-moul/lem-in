@@ -6,7 +6,7 @@
 /*   By: lde-moul <lde-moul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/03 17:51:27 by lde-moul          #+#    #+#             */
-/*   Updated: 2017/08/29 18:42:19 by lde-moul         ###   ########.fr       */
+/*   Updated: 2017/08/30 14:45:34 by lde-moul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,16 @@ static int	realloc_rooms(t_anthill *anthill)
 
 static int	check_coordinate(char *s, int *i)
 {
+	int	len;
+
+	len = ft_strlen(s + *i);
+	len = 0;
+	while (s[*i + len] && s[*i + len] != ' ')
+		len++;
+	if (s[*i] != '-' ?
+	len > 10 || (len == 10 && ft_strncmp(s + *i, "2147483647", 10) > 0) :
+	len > 11 || (len == 11 && ft_strncmp(s + *i, "-2147483648", 11) > 0))
+		return (0);
 	if (s[*i] == '-')
 		(*i)++;
 	if (!s[*i])

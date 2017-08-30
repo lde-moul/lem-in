@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lde-moul <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: lde-moul <lde-moul@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/12/13 11:29:42 by lde-moul          #+#    #+#              #
-#    Updated: 2017/08/29 15:02:43 by lde-moul         ###   ########.fr        #
+#    Updated: 2017/08/30 14:50:30 by lde-moul         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,6 +27,7 @@ SRCBASE = ft_memset.c \
 		  ft_strlen.c \
 		  ft_strncpy.c \
 		  ft_strcmp.c \
+		  ft_strncmp.c \
 		  ft_atoi.c \
 		  ft_isdigit.c \
 		  ft_memalloc.c \

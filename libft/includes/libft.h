@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lde-moul <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lde-moul <lde-moul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/18 14:11:57 by lde-moul          #+#    #+#             */
-/*   Updated: 2017/08/29 15:12:07 by lde-moul         ###   ########.fr       */
+/*   Updated: 2017/08/30 14:49:58 by lde-moul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ void			*ft_memchr(const void *s, int c, size_t n);
 size_t			ft_strlen(const char *s);
 char			*ft_strncpy(char *dst, const char *src, size_t len);
 int				ft_strcmp(const char *s1, const char *s2);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_atoi(const char *str);
 
 int				ft_isdigit(int c);
