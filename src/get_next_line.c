@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lde-moul <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: lde-moul <lde-moul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/29 13:03:04 by lde-moul          #+#    #+#             */
-/*   Updated: 2016/12/07 20:43:47 by lde-moul         ###   ########.fr       */
+/*   Updated: 2017/08/31 18:05:59 by lde-moul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ static int	read_line(t_buf *b, char **line)
 			if (!(*line = concat_line(&list)))
 				return (free_and_return(NULL, &list, -1));
 			ft_memmove(b->content, c + 1, b->size);
-			return (1);
+			return (free_and_return(NULL, &list, 1));
 		}
 	}
 }

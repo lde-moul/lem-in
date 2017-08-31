@@ -6,7 +6,7 @@
 /*   By: lde-moul <lde-moul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/24 17:54:45 by lde-moul          #+#    #+#             */
-/*   Updated: 2017/08/29 18:07:01 by lde-moul         ###   ########.fr       */
+/*   Updated: 2017/08/31 18:13:18 by lde-moul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,11 @@ int		add_line(t_line **lines, char **text)
 	t_line	*line;
 
 	if ((n = get_next_line(0, text)) != 1)
+	{
+		if (*text)
+			free(*text);
 		return (n);
+	}
 	if (!(line = (t_line*)malloc(sizeof(t_line))))
 	{
 		free(*text);
